@@ -1,0 +1,8 @@
+
+
+<% if @auth %>
+  <a href="<%= new_form_path %>" class="btn-primary btn btn-outline-primary" >Contact with us</a>
+<% end %>
+
+
+<%= link_to 'Signout', destroy_user_session_path, method: :delete  %>
